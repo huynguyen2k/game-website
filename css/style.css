@@ -1,0 +1,1176 @@
+/*=================== IMPORT ===================*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+/*=================== BREAKPOINT ===================*/
+/*=================== COLOR ===================*/
+/*=================== START-LABEL ===================*/
+.new-label,
+.racing-label,
+.strategy-label,
+.adventure-label {
+  display: inline-block;
+  padding: 8px 20px;
+  color: white;
+}
+
+.new-label {
+  background-color: #ff205f;
+}
+
+.racing-label {
+  background-color: #694eae;
+}
+
+.strategy-label {
+  background-color: #4eae60;
+}
+
+.adventure-label {
+  background-color: #40abf5;
+}
+
+.rating--gold {
+  background-color: #ffb320;
+}
+
+.rating--purple {
+  background-color: #694eae;
+}
+
+.rating--green {
+  background-color: #4eae60;
+}
+
+.rating--pink {
+  background-color: #ff20ae;
+}
+
+/*=================== END-LABEL ===================*/
+/*=================== START-STYLE ===================*/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/*=================== END-STYLE ===================*/
+/*=================== START-TOP-BAR ===================*/
+#top-bar {
+  background-color: #131313;
+  border-bottom: 2px solid #ffb320;
+}
+
+.top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.top-nav__logo a {
+  display: inline-block;
+  padding: 5px;
+}
+
+.top-nav__mobile .nav-toggle {
+  border: none;
+  color: white;
+  background-color: inherit;
+  font-size: 1.8rem;
+}
+
+.top-nav__mobile .nav-toggle:hover {
+  color: #ffb320;
+}
+
+.top-nav__mobile .menu {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  z-index: 1000;
+  background-color: #252525;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-property: height;
+  transition-property: height;
+  overflow: hidden;
+}
+
+.top-nav__mobile .menu li a {
+  display: block;
+  padding: 15px 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-bottom: 1px solid gray;
+}
+
+.top-nav__mobile .menu li a:hover {
+  color: #ffb320;
+}
+
+.top-nav__mobile .menu li:last-child a {
+  border-color: transparent;
+}
+
+.top-nav__mobile .active-menu {
+  height: 351.4px;
+}
+
+.top-nav__desktop {
+  display: none;
+}
+
+.top-nav__login-register-btn {
+  display: none;
+}
+
+/*=================== END-TOP-BAR ===================*/
+/*=================== START-HERO-IMAGE ===================*/
+#hero-image {
+  display: table;
+  width: 100%;
+  height: 820px;
+  background-size: cover;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  background: url("../images/slider-1.jpg") no-repeat center;
+}
+
+.hero-image {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.hero-image__text {
+  color: white;
+  position: relative;
+}
+
+.hero-image__text .title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  opacity: 0;
+  -webkit-transform: translate(0, -100px);
+          transform: translate(0, -100px);
+}
+
+.hero-image__text .title span {
+  color: #ffb320;
+}
+
+.hero-image__text .content {
+  width: 80%;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  opacity: 0;
+  -webkit-transform: translate(0, -100px);
+          transform: translate(0, -100px);
+}
+
+.hero-image__text .read-more-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #ffb320;
+  color: black;
+  border: none;
+  font-size: 1rem;
+  opacity: 0;
+  -webkit-transform: translate(0, -100px);
+          transform: translate(0, -100px);
+}
+
+.hero-image__text .show-text {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.hero-image__text .dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: calc(100% + 175px);
+  left: 0;
+  color: black;
+}
+
+.hero-image__text .dots li {
+  font-size: 1.1rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  background-color: #dbe2ec;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.hero-image__text .dots .active-dot {
+  background-color: #ffb320;
+}
+
+/*=================== END-HERO-IMAGE ===================*/
+/*=================== START-LATEST-NEWS ===================*/
+.latest-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background-color: #131313;
+  overflow: hidden;
+}
+
+.latest-news__title {
+  width: 35%;
+  padding: 20px 0;
+  background-color: #ffb320;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.latest-news__news {
+  width: 65%;
+  overflow: hidden;
+}
+
+.latest-news__news .news-container {
+  width: 10000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.latest-news__news .news-container .news-list .news-item {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.latest-news__news .news-container .news-list .news-item .topic {
+  margin-right: 30px;
+}
+
+@-webkit-keyframes animationStart {
+  from {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes animationStart {
+  from {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes animationText {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+
+@keyframes animationText {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+
+/*=================== END-LATEST-NEWS ===================*/
+/*=================== START-GAMES-TYPE ===================*/
+.games-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 100px 0;
+}
+
+.games-type__card {
+  height: 415px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.games-type__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.games-type__card .game-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.games-type__card .game-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.games-type__card .topic {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+.games-type__card .info {
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  z-index: 100;
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.games-type__card .info .title {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.games-type__card .info .content {
+  margin-bottom: 20px;
+}
+
+.games-type__card .info .comment-btn {
+  color: lightgray;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+/*=================== END-GAMES-TYPE ===================*/
+/*=================== START-RECENT-GAMES ===================*/
+#recent-games {
+  background: #eef2f6;
+  border-top: 1px solid #d6dee7;
+  border-bottom: 1px solid #d6dee7;
+}
+
+.recent-games {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.recent-games__topic {
+  margin-bottom: 15px;
+}
+
+.recent-games__title {
+  font-size: 2.5rem;
+  margin-bottom: 80px;
+}
+
+.recent-games__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.recent-games__card {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.recent-games__card:last-child {
+  margin-bottom: 0;
+}
+
+.recent-games__card .topic {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.recent-games__card .game-image {
+  width: 100%;
+}
+
+.recent-games__card .info {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-width: 0 1px 1px 1px;
+  padding: 30px;
+  text-align: left;
+}
+
+.recent-games__card .info .title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.recent-games__card .info .content {
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.recent-games__card .info .comment-btn {
+  color: gray;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.recent-games__card .info .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 1.5px;
+  right: 1.5px;
+}
+
+.recent-games__card .info .icons span {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+.recent-games__card .info .icons span img {
+  width: 100%;
+  height: 100%;
+}
+
+.recent-games__card .info .icons .star {
+  background-color: #ffb320;
+}
+
+.recent-games__card .info .icons .heart {
+  background-color: #ff205f;
+}
+
+/*=================== END-RECENT-GAMES ===================*/
+/*=================== START-TOURNAMENTS ===================*/
+#tournaments {
+  background: url("../images/pattern.png") repeat left top;
+}
+
+.tournaments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  padding: 100px 0;
+}
+
+.tournaments__card {
+  position: relative;
+  background-color: #252525;
+}
+
+.tournaments__card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.tournaments__card .tournament-label {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  padding: 10px 20px;
+  color: white;
+  background-color: #fb6e10;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.tournaments__card .premium-tournament {
+  display: inline-block;
+  padding: 10px 25px;
+  font-weight: 500;
+  background-color: #ffb320;
+  text-transform: uppercase;
+}
+
+.tournaments__card .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 20px;
+}
+
+.tournaments__card .content .image {
+  width: 45%;
+}
+
+.tournaments__card .content .image img {
+  width: 100%;
+}
+
+.tournaments__card .content .info {
+  width: 55%;
+  padding: 0 15px;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+}
+
+.tournaments__card .content .info .name {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+  color: #ffb320;
+  margin-bottom: 30px;
+}
+
+.tournaments__card .content .info p {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.tournaments__card .content .info p span {
+  color: white;
+}
+
+.tournaments__card .content .info .prizes {
+  color: #ffb320;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.tournaments__card .content .info .prizes span {
+  color: gray;
+}
+
+/*=================== END-TOURNAMENTS ===================*/
+/*=================== START-RECENT-REVIEWS ===================*/
+.recent-reviews {
+  padding: 100px 0 0 0;
+  text-align: center;
+}
+
+.recent-reviews__topic {
+  margin-bottom: 15px;
+}
+
+.recent-reviews__title {
+  font-size: 2.5rem;
+  margin-bottom: 80px;
+  font-weight: 500;
+}
+
+.recent-reviews__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.recent-reviews__container .card {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.recent-reviews__container .card .rating {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  left: 30px;
+  -webkit-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+  font-size: 1.2rem;
+  color: white;
+}
+
+.recent-reviews__container .card .image {
+  height: 345px;
+  overflow: hidden;
+}
+
+.recent-reviews__container .card .image img {
+  width: 100%;
+}
+
+.recent-reviews__container .card .info .name {
+  font-size: 1.5rem;
+  margin: 30px 0;
+}
+
+.recent-reviews__container .card .info .content {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: gray;
+}
+
+/*=================== END-RECENT-REVIEWS ===================*/
+/*=================== START-POSTS-COMMENTS ===================*/
+#posts-comments {
+  padding: 80px 0;
+  background: url("../images/pattern.png") repeat top left;
+}
+
+.posts-comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  position: relative;
+}
+
+.posts-comments__game-warrior {
+  color: white;
+  margin-bottom: 50px;
+}
+
+.posts-comments__game-warrior img {
+  margin-bottom: 30px;
+}
+
+.posts-comments__game-warrior .content {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+}
+
+.posts-comments__hero-image {
+  display: none;
+}
+
+.posts-comments__latest-posts {
+  margin-bottom: 50px;
+  padding: 50px 30px;
+  background-color: #252525;
+  color: white;
+}
+
+.posts-comments__latest-posts .title {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.posts-comments__latest-posts .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.posts-comments__latest-posts .post:last-child {
+  margin-bottom: 0;
+}
+
+.posts-comments__latest-posts .post img {
+  width: 30%;
+}
+
+.posts-comments__latest-posts .post .info {
+  width: 70%;
+  padding-left: 15px;
+  font-size: 0.8rem;
+}
+
+.posts-comments__latest-posts .post .info .date {
+  display: block;
+  color: #ffb320;
+  margin-bottom: 15px;
+}
+
+.posts-comments__latest-posts .post .info .content {
+  line-height: 1.3rem;
+  color: lightgray;
+  margin-bottom: 15px;
+}
+
+.posts-comments__latest-posts .post .info .poster {
+  color: gray;
+  text-decoration: none;
+}
+
+.posts-comments__top-comments {
+  color: white;
+  padding: 50px 30px;
+  background-color: #252525;
+}
+
+.posts-comments__top-comments .title {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.posts-comments__top-comments .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.posts-comments__top-comments .comment:last-child {
+  margin-bottom: 0;
+}
+
+.posts-comments__top-comments .comment img {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.posts-comments__top-comments .comment .info {
+  width: 80%;
+  padding-left: 30px;
+  font-size: 0.8rem;
+}
+
+.posts-comments__top-comments .comment .info .content {
+  color: lightgray;
+  margin-bottom: 15px;
+}
+
+.posts-comments__top-comments .comment .info .content .author {
+  color: #ff205f;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.posts-comments__top-comments .comment .info .date {
+  color: #ffb320;
+}
+
+/*=================== END-POSTS-COMMENTS ===================*/
+/*=================== START-FOOTER-SECTION ===================*/
+#footer-section {
+  padding: 30px 0;
+  background-color: #252525;
+}
+
+.footer-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse nowrap;
+          flex-flow: column-reverse nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: lightgray;
+}
+
+.footer-section__copyright {
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+.footer-section__copyright a {
+  color: #ff205f;
+  text-decoration: none;
+}
+
+.footer-section__menu {
+  margin-bottom: 15px;
+}
+
+.footer-section__menu li {
+  display: inline-block;
+}
+
+.footer-section__menu li a {
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: lightgray;
+}
+
+.footer-section__menu li a:hover {
+  color: #ffb320;
+}
+
+/*=================== END-FOOTER-SECTION ===================*/
+/*=================== START-RESPONSIVE ===================*/
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .latest-news__title {
+    width: 30%;
+    font-size: 1.1rem;
+  }
+  .latest-news__news {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .top-nav__mobile {
+    display: none;
+  }
+  .top-nav__desktop {
+    display: block;
+  }
+  .top-nav__desktop .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .top-nav__desktop .menu li a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  .top-nav__desktop .menu li a:hover {
+    color: #ffb320;
+  }
+  .top-nav__login-register-btn {
+    display: inline-block;
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    background-color: #ffb320;
+    color: #131313;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .hero-image__text .title {
+    font-size: 2.5rem;
+  }
+  .hero-image__text .content {
+    width: 75%;
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+  .hero-image__text .read-more-btn {
+    padding: 13px 25px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+  }
+  .hero-image__text .dots li {
+    font-size: 1.2rem;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 15px;
+  }
+  .latest-news__title {
+    width: 25%;
+    padding: 25px 50px;
+    font-size: 1.2rem;
+    text-align: right;
+  }
+  .latest-news__news {
+    width: 75%;
+  }
+  .games-type {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .games-type__card {
+    width: 50%;
+    margin-bottom: 0;
+  }
+  .recent-games__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .recent-games__card {
+    width: calc(50% - 15px);
+  }
+  .tournaments {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .tournaments__card {
+    width: calc(50% - 15px);
+  }
+  .tournaments__card:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .tournaments__card .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tournaments__card .content .image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .tournaments__card .content .info {
+    width: 100%;
+    padding: 0;
+  }
+  .recent-reviews__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .recent-reviews__container .card {
+    width: calc(50% - 15px);
+    margin-bottom: 100px;
+  }
+  .posts-comments {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .posts-comments__game-warrior {
+    width: 100%;
+  }
+  .posts-comments__latest-posts {
+    width: calc(50% - 15px);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 0;
+  }
+  .posts-comments__top-comments {
+    width: calc(50% - 15px);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .top-nav__desktop .menu li a {
+    padding: 10px 25px;
+    font-size: 1.2rem;
+  }
+  .top-nav__login-register-btn {
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-size: 1rem;
+  }
+  .hero-image__text .title {
+    font-size: 3rem;
+    margin-bottom: 35px;
+  }
+  .hero-image__text .content {
+    width: 70%;
+    font-size: 1.3rem;
+    line-height: 1.8;
+  }
+  .hero-image__text .read-more-btn {
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+  }
+  .games-type__card {
+    width: 25%;
+  }
+  #recent-games {
+    background: #eef2f6 url("../images/recent-game-bg.webp") no-repeat center;
+    background-size: cover;
+  }
+  .recent-games__container {
+    -ms-flex-flow: nowrap;
+        flex-flow: nowrap;
+  }
+  .recent-games__card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 0;
+  }
+  .tournaments__card:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .tournaments__card .content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .tournaments__card .content .image {
+    width: 45%;
+    margin-bottom: 0;
+  }
+  .tournaments__card .content .info {
+    width: 55%;
+    padding: 0 20px;
+  }
+  #recent-reviews {
+    background: url("../images/review-bg.webp") no-repeat;
+    background-position: right -150px top 0;
+  }
+  .recent-reviews__container .card {
+    width: calc(25% - 20px);
+  }
+  .recent-reviews__container .card .image {
+    height: auto;
+  }
+  .posts-comments__hero-image {
+    display: block;
+    width: 370px;
+    position: absolute;
+    left: -45px;
+    bottom: -95px;
+  }
+  .posts-comments__hero-image img {
+    width: 100%;
+  }
+  .posts-comments__game-warrior {
+    width: calc(33.33% - 20px);
+    margin-bottom: 0;
+  }
+  .posts-comments__latest-posts {
+    width: calc(33.33% - 20px);
+  }
+  .posts-comments__top-comments {
+    width: calc(33.33% - 20px);
+  }
+  .footer-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-section__menu {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1176px;
+  }
+  .top-nav__desktop .menu li a {
+    padding: 10px 30px;
+    font-size: 1.3rem;
+  }
+  .hero-image__text .title {
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+  }
+  .hero-image__text .content {
+    width: 65%;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 35px;
+  }
+  #recent-reviews {
+    background-position: right -50px top 0;
+  }
+  .posts-comments__hero-image {
+    width: auto;
+  }
+  .posts-comments__hero-image img {
+    width: 100%;
+  }
+}
+
+/*=================== END-RESPONSIVE ===================*/
+/*# sourceMappingURL=style.css.map */
